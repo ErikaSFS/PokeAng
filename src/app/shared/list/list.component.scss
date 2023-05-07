@@ -1,0 +1,32 @@
+@import '../../../config-scss/rem-calc.scss';
+
+
+$padding: rem-calc(20);
+
+
+.container-fluid {
+    position: relative;
+    display: flex;
+    
+    flex-wrap: wrap;
+    background: var(--branco);
+    padding: 0;
+
+    }
+
+    img {
+        position: relative;
+        display: flex;
+        background-color: white;
+        align-items: center;
+        justify-content: center;
+        height: rem-calc(160);
+        width: rem-calc(250);
+        padding: 0;
+        bottom: 0;
+        margin-bottom: rem-calc(10);
+        border-radius: rem-calc(10);
+        text-decoration: none;
+        color: var(--primary-color);
+      
+    }

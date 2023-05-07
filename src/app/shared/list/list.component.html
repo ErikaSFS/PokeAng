@@ -1,0 +1,55 @@
+
+
+<div class="container-fluid d-flex column justify-content-center align-items-center p-5" [ngClass]="pokemon.class">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-6">
+          <a routerLink="/">
+            <i class="bi bi-arrow-left icon"></i>
+          </a>
+        </div>
+        <div class="col-6 d-flex justify-content-end">
+          <a role="button">
+            <i class="bi bi-heart icon"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-6">
+          <h2 class="mb-3 text-capitalize">{{ pokemon.name }}</h2>
+        </div>
+        <div class="col-6">
+          <h4 class="mb-3 text-end fst-italic"># {{ pokemon.id }}</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <ul>
+            <li class="tips mb-2 text-capitalize">{{ pokemon.types }}</li>
+            <!--li class="tips">Poison</li-->
+          </ul>
+        </div>
+        <div class="col-12 d-flex justify-content-center">
+          <img [src]="pokemon.img" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="information container-fluid d-flex justify-content-center align-items-center p-5">
+    <div class="container">
+      <div class="row">
+        <nav>
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <button class="nav-link px-3 py-2 active" id="nav-about-tab" data-bs-toggle="tab" data-bs-target="#nav-about"
+              type="button" role="tab" aria-controls="nav-about" aria-selected="true">Sobre</button>
+            <button class="nav-link px-3 py-2" id="nav-baseStats-tab" data-bs-toggle="tab" data-bs-target="#nav-baseStats"
+              type="button" role="tab" aria-controls="nav-baseStats" aria-selected="false">Add Comentário</button>
+            <button class="nav-link px-3 py-2" id="nav-evolution-tab" data-bs-toggle="tab" data-bs-target="#nav-evolution"
+              type="button" role="tab" aria-controls="nav-evolution" aria-selected="false">Favoritar</button>
+          </div>
+        </nav>
+
+   
+
+        

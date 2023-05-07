@@ -3,15 +3,21 @@ import { CommonModule } from '@angular/common';
 
 //Components
 import { HeaderComponent } from './header/header.component';
+import { SearchComponent } from './search/search.component';
+import { ListComponent } from './list/list.component';
 
 
 
 @NgModule({
   declarations: [
-    HeaderComponent
+    HeaderComponent,
+    SearchComponent,
+    ListComponent
   ],
   exports: [
-    HeaderComponent
+    HeaderComponent,
+    SearchComponent,
+    ListComponent
   ],
 
   imports: [

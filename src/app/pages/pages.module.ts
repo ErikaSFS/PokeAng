@@ -4,6 +4,11 @@ import { HomeComponent } from './home/home.component';
 
 //Module Routing
 import { RoutingModule } from './routing.modules';
+
+//Module
+import { SharedModule } from '../shared/shared.module';
+
+//Component
 import { DetailsComponent } from './details/details.component';
 
 
@@ -16,8 +21,8 @@ import { DetailsComponent } from './details/details.component';
   
   imports: [
     CommonModule,
-    RoutingModule
- 
+    RoutingModule,
+    SharedModule
   ]
 })
 export class PagesModule { }
