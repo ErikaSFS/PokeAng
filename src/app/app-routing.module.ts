@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ListComponent } from './components/list/list.component';
+
+//Lazy Loading
+
 
 const routes: Routes = [
-  { path: '', component: ListComponent },
+  { path: '', loadChildren:() => import('./pages/pages.module'). then(p => p.PagesModule) },
 ];
 
 @NgModule({
